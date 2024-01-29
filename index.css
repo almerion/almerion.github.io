@@ -1,7 +1,3 @@
-/* --------------------------------------- */
-/* ----- Basic Setup ----- */
-/* --------------------------------------- */
-
 @font-face {
     font-family: 'Hk Grotesk';
     font-style: normal;
@@ -20,6 +16,10 @@
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+}
+
+li > ul {
+    padding-left: 2.5rem;
 }
 
 :root {
@@ -121,7 +121,8 @@ img {
 
 h1,
 h2,
-h3 {
+h3,
+.experience-title{
     font-family: 'Jost', sans-serif;
     font-weight: 400;
     line-height: var(--line-height-small);
@@ -145,7 +146,7 @@ h2 {
     margin-bottom: var(--gutter-medium);
 }
 
-h2::after {
+h2::after, .experience-title::after {
     content: '';
     display: block;
     height: 2px;
@@ -338,15 +339,24 @@ body:not(.user-is-tabbing) a:focus {
 .nav {
     display: flex;
     justify-content: flex-end;
-    padding: var(--gutter-normal) 0;
+    padding-top: var(--gutter-normal);
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
 }
 
 .nav__items {
     display: flex;
     list-style: none;
+    background: rgba(255,255,255, 10%);
 }
 
-.nav__item:not(:last-child) {
+.nav__item:first-child {
+    margin-left: var(--gutter-medium);
+}
+
+.nav__item {
     margin-right: var(--gutter-medium);
 }
 
@@ -357,8 +367,11 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 @media(max-width: 400px) {
-    .nav__item:not(:last-child) {
+    .nav__item {
         margin-right: var(--gutter-normal);
+    }
+    .nav__item:first-child {
+        margin-left: var(--gutter-normal);
     }
 }
 
@@ -450,6 +463,60 @@ body:not(.user-is-tabbing) a:focus {
         align-items: initial;
         flex-direction: column-reverse;
     }
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    width: 100%;
+    transition: all .5s ease-in-out;
+}
+
+.carousel-element {
+    flex: 0 0 100%;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    border-radius: 100%;
+    background: var(--pink);
+    z-index: 2;
+    padding: 5px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.carousel-btn.prev {
+    left: -50px;
+}
+
+.carousel-btn.next {
+    right: -50px;
+}
+
+.carousel-container ul {
+    padding-left: 20px;
+}
+
+.row-carousel {
+    position: relative;
+}
+
+.carousel-content-container{
+    display: flex;
+    align-items: center;
+    gap: 200px;
+}
+
+.carousel-content-container img {
+    height: 200px;
 }
 
 .work__box:not(:last-child) {
@@ -553,10 +620,6 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 @media(min-width: 901px) {
-    .about__text {
-        flex: 0 0 35%;
-    }
-    
     .about__photo-container {
         flex: 1;
         margin: 0 var(--gutter-huge) 0 0;
@@ -569,6 +632,13 @@ body:not(.user-is-tabbing) a:focus {
 
 .contact__info {
     max-width: var(--container-medium-width);
+}
+
+.contact__info .contact-links {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    gap: 10px;
 }
 
 /* --------------------------------------- */
@@ -610,4 +680,33 @@ body:not(.user-is-tabbing) a:focus {
     .footer {
         padding: var(--gutter-medium) 0;
     } 
+}
+
+.experience-title {
+    font-size: var(--font-size-large);
+    margin-bottom: var(--gutter-small);
+}
+
+.company-presentation-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 0 10px;
+    margin-bottom: 10px;
+}
+
+.logos {
+    display: flex;
+    gap: 40px;
+}
+
+.client li {
+    list-style-position: inside;
+}
+
+.missions, .recap-alternance {
+    margin-bottom: 1em;
+}
+
+.pokedex {
+    height: 500px;
 }

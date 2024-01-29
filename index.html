@@ -1,276 +1,353 @@
-<!-- 
-  Hello 😊.
-
-  This template is designed and developed by Nisar Hassan Naqvi
-  for anyone to use for free or customize the way they like.
-
-  Github Repo: https://github.com/nisarhassan12/portfolio-template/
-  My Website: https://nisar.dev
-
-  For business & inquires, contact me => syednisarhassan12@gmail.com
--->
-
-<!--
-  Follow the instructions written in comments to create your stunning portfolio
--->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png"/>
+    <title>
+        Tiago Narciso | Développeur web à Vitry-Sur-Seine, France.
+    </title>
 
-  <!-- Put your site title here -->
-  <title>
-    Syed Ali Hussnain | A Web Developer based in Lahore, Pakistan.
-  </title>
-
-  <meta name="description" content="Add small description of yourslef.">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="Put your name, skills and some coding keywords" />
-  <link rel="stylesheet" href="index.css" />
+    <meta name="description"
+          content="Étudiant en 3ème année de BUT Informatique à l'IUT de Montreuil, en alternance chez HelloSafe depuis septembre 2022">
+    <meta name="keywords"
+          content="Tiago Narciso, HelloSafe, IUT de Montreuil, BUT Informatique, alternance, développement web, programmation, étudiant en informatique, portfolio">
+    <link rel="stylesheet" href="index.css"/>
 </head>
 
 <body>
 
-  <!-- ***** Header ***** -->
-
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
+<!-- ***** Header ***** -->
+<nav class="nav" role="navigation">
+    <ul class="nav__items">
+        <li class="nav__item"><a href="#work" class="nav__link">Projets</a></li>
+        <li class="nav__item"><a href="#clients" class="nav__link">Expérience</a></li>
+        <li class="nav__item">
+            <a href="#about" class="nav__link">À propos</a>
+        </li>
+        <li class="nav__item">
             <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
-          <span>Syed Ali Hussnain</span>
-        </h1>
-        <!-- Put a small paragraph about yourself -->
-        <p>A Web Developer based in Lahore, Pakistan.</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
-      </div>
-    </div>
-  </header>
+        </li>
+    </ul>
+</nav>
 
-  <main role="main">
+<header class="header" role="banner" id="top">
+    <div class="header__text-box row">
+        <div class="header__text">
+            <h1 class="heading-primary">
+                <span>Tiago Narciso</span>
+            </h1>
+            <p>Alternant en 3ème année de BUT informatique</p>
+            <a href="#about" class="btn btn--pink">À propos de moi</a>
+        </div>
+    </div>
+</header>
+
+<main role="main">
+
+    <section class="work" id="die">
+        <div class="row row-carousel">
+            <h2>Parcours académique</h2>
+            <img src="images/chevron-left.svg" class="carousel-btn prev" alt="chevron left" width="30" height="30"/>
+            <img src="images/chevron-right.svg" class="carousel-btn next" alt="chevron right" width="30" height="30"/>
+            <div class="carousel">
+                <div class="carousel-container">
+                    <div class="carousel-element">
+                        <h3>Collège Jean Perrin</h3>
+                        <div class="carousel-content-container">
+                            <ul>
+                                <li>Adresse: 61 Rue Audran, 94400 Vitry-sur-Seine</li>
+                                <li>Années: 2014-2018</li>
+                                <li>Diplôme: Brevet des collèges</li>
+                                <li>Mention: Assez bien</li>
+                            </ul>
+                            <img src="images/statue_jean_perrin.JPG" alt="college jean perrin">
+                        </div>
+                    </div>
+                    <div class="carousel-element">
+                        <h3>Lycée Jean Macé</h3>
+                        <div class="carousel-content-container">
+                            <ul>
+                                <li>Adresse: 34 Rue Jules Ferry, 94400 Vitry-sur-Seine</li>
+                                <li>Années: 2018-2020</li>
+                                <li>Diplôme: Baccalauréat</li>
+                                <li>Spécialisations:
+                                    <ul>
+                                        <li>Mathématiques</li>
+                                        <li>Sciences de l'ingénieur</li>
+                                    </ul>
+                                </li>
+                                <li>Mention: Bien</li>
+                            </ul>
+                            <img src="images/jean-mace.png" alt="lycee jean mace">
+                        </div>
+                    </div>
+                    <div class="carousel-element">
+                        <h3>IUT de Montreuil</h3>
+                        <div class="carousel-content-container">
+                            <ul>
+                                <li>Adresse: 140 Rue de la Nouvelle France, 93100 Montreuil</li>
+                                <li>Années: 2020-2024 ( en cours )</li>
+                                <li>Diplôme: BUT Informatique</li>
+                                <li>Parcours: réalisation d'applications : conception, développement, validation</li>
+                            </ul>
+                            <img src="images/iut-montreuil.jpg" alt="iut de montreuil">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- ***** Work ***** -->
 
     <section class="work" id="work">
-      <div class="row">
-        <h2>My Work</h2>
-        <div class="work__boxes">
+        <div class="row">
+            <h2>Projets</h2>
+            <div class="work__boxes">
+                <div class="work__box">
+                    <div class="work__text">
+                        <h3>Terraria like</h3>
+                        <p>
+                            Pour notre projet de première année en BUT informatique,
+                            nous avons formé des groupes de trois étudiants et travaillé à partir d'un cahier des charges
+                            pour développer un jeu type Terraria en un mois, en suivant les méthodes de développement agile.
+                        </p>
+                        <ul class="work__list">
+                            <li>Java</li>
+                            <li>JavaFX</li>
+                        </ul>
 
-          <!-- Each div with the work__box class is a project. -->
+                        <div class="work__links">
+                            <a href="https://github.com/naulan-chrzaszcz/Terraria-javafx" title="Github Terraria Like"
+                               target="_blank">
+                                <img src="./images/github.svg" class="work__code" alt="GitHub">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="work__image-box">
+                        <img src="./images/terraria.png" class="work__image" alt="terraria like"/>
+                    </div>
+                </div>
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Portfolio Template</h3>
-              <p>
-                A free Open Source Portfolio for anyone to use for free.
-              </p>
-              <ul class="work__list">
-                <li>HTML</li>
-                <li>SCSS</li>
-                <li>JavaScript</li>
-                <li>Parcel</li>
-              </ul>
+                <div class="work__box">
+                    <div class="work__text">
+                        <h3>Générateur d'exercices</h3>
+                        <p>
+                            Dans le cadre d'un projet de deuxième année de BUT informatique, en groupes de trois,
+                            nous avons collaboré pendant cinq mois avec un client réel pour élaborer un cahier des charges
+                            puis développer un produit final répondant à ses attentes.
+                            Ce processus intensif a renforcé nos compétences en gestion de projet et communication client.
+                        </p>
+                        <ul class="work__list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JS</li>
+                            <li>JQUERY</li>
+                            <li>PHP</li>
+                            <li>POSTGRESQL</li>
+                            <li>DOCKER</li>
+                        </ul>
 
-              <div class="work__links">
-                <a href="https://nisar.surge.sh" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/nisarhassan12/portfolio" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div>
+                        <div class="work__links">
+                            <a href="https://github.com/DUT-Info-Montreuil/SAE-Generateur-Dexo">
+                                <img src="./images/github.svg" class="work__code" title="Github Générateur d'exercices" alt="GitHub">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="work__image-box">
+                        <img src="./images/generateur-exercices.png" class="work__image" alt="site générateur d'exercices"/>
+                    </div>
+                </div>
+
+                <div class="work__box">
+                    <div class="work__text">
+                        <h3>Android Pokedex</h3>
+                        <p>
+                            Dans le cadre d'un projet de deuxième année de BUT informatique d'une durée de deux semaines,
+                            en équipe de deux nous avons choisi de développer un Pokédex comme application mobile.
+                            Ce choix nous a permis de mettre en pratique nos compétences en développement
+                            tout en explorant notre passion pour l'univers Pokémon.
+                        </p>
+                        <ul class="work__list">
+                            <li>Java</li>
+                            <li>SQLITE</li>
+                        </ul>
+
+                        <div class="work__links">
+                            <a href="#" class="link__text">
+                                Visit Site <span>&rarr;</span>
+                            </a>
+                            <a href="#">
+                                <img src="./images/github.svg" class="work__code" title="Github android pokedex" alt="GitHub">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="work__image-box">
+                        <img src="./images/pokedex.jpg" class="work__image pokedex" alt="application pokedex"/>
+                    </div>
+                </div>
+
+                <div class="work__box">
+                    <div class="work__text">
+                        <h3>CarMate</h3>
+                        <p>
+                            Dans le cadre d'un projet de troisième année de BUT informatique, en groupe de cinq
+                            durant trois mois avec un client réel, nous devions développer un site de covoiturage destiné aux étudiants,
+                            en suivant un cahier des charges. Avec des rôles tournants
+                            (DevOps, développeur front-end, développeur back-end) et des cycles de sprint de deux semaines,
+                            nous avons pu expérimenter une dynamique de travail flexible et efficace, tout en répondant
+                            aux besoins spécifiques de notre client.
+                        </p>
+                        <ul class="work__list">
+                            <li>Angular</li>
+                            <li>Flask</li>
+                            <li>Docker</li>
+                            <li>Postgresql</li>
+                            <li>Tailwind</li>
+                            <li>SCSS</li>
+                        </ul>
+
+                        <div class="work__links">
+                            <a href="#">
+                                <img src="./images/github.svg" class="work__code" title="Github carmate" alt="GitHub">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="work__image-box">
+                        <img src="./images/carmate.png" class="work__image" alt="site carmate"/>
+                    </div>
+                </div>
             </div>
-            <div class="work__image-box">
-              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Calculator</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
-              </p>
-              <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Notificator</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
-              </p>
-              <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <!-- ***** Clients ***** -->
 
     <section class="client" id="clients">
-      <div class="row">
-        <h2>Clients</h2>
-        <div class="client__logos">
-          <!-- Add logos of the clients or companies you'have worked with. -->
-          <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
-          <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />
-          <img src="./images/bullseye.png" class="client__logo" alt="Company 1" />
-          <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" />
-          <img src="./images/fastlane.png" class="client__logo" alt="Company 3" />
-          <img src="./images/chippy.png" class="client__logo" alt="Company 1" />
+        <div class="row">
+            <span class="experience-title">Expérience</span>
+            <div>
+                <h3>Hellosafe</h3>
+                <div class="company-presentation-container">
+                    <img src="images/hellosafe.png" alt="logo hellosafe">
+                    <span>
+                    HelloSafe est une entreprise spécialisée dans la comparaison de produits financiers,
+                    proposant des outils pratiques et un blog informatif sur plus d'une dizaine de sites à travers le monde.
+                    Elle aide les utilisateurs à naviguer aisément dans l'univers des finances personnelles,
+                    offrant des comparaisons claires et des conseils pertinents pour une prise de décision éclairée.
+                </span>
+                </div>
+                <ul class="recap-alternance">
+                    <li>Type de contrat: Alternance</li>
+                    <li>Durée: 2 ans</li>
+                    <li>Dates: Septembre 2023 - Aout 2024</li>
+                    <li>Poste: Développeur full-stack</li>
+                    <li>Taille de l'équipe tech: 5 personnes</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Les technologies utilisées</h3>
+                <div class="logos">
+                    <img src="images/next.svg" alt="next logo" width="60" height="60">
+                    <img src="images/react.svg" alt="react logo" width="60" height="60">
+                    <img src="images/stimulus.svg" alt="stimulus logo" width="60" height="60">
+                    <img src="images/symfony.svg" alt="symfony logo" width="60" height="60">
+                    <img src="images/vue.svg" alt="vue js logo" width="60" height="60">
+                    <img src="images/wordpress.svg" alt="wordpress logo" width="60" height="60">
+                    <img src="images/tailwind.svg" alt="tailwind logo" width="60" height="60">
+                    <img src="images/sass.svg" alt="sass logo" width="60" height="60">
+                    <img src="images/mariadb.svg" alt="mariadb logo" width="60" height="60">
+                </div>
+                <p>En plus de ces technologies, nous avons adopté une approche DDD (Domain-Driven Design) et la clean architecture pour structurer nos projets, assurant ainsi une meilleure séparation des préoccupations et une évolutivité accrue.</p>
+            </div>
+            <div class="missions">
+                <h3>Les missions</h3>
+                <ul class="missions">
+                    <li>Création d'outils sur les différents sites avec vue js <a href="https://hellosafe.ca/pret-hypothecaire/capacite-emprunt">comme ici</a></li>
+                    <li>Maintenance du site, ajout de features et de blocs à wordpress</li>
+                    <li>Creation d'une nouvelle plateforme avec next js / symfony pour la création, édition et suppression de comparateurs</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Organisation de l'équipe</h3>
+                <p>Participation active aux daily meetings, permettant un suivi régulier de l'avancement des projets, une communication fluide au sein de l'équipe et une réactivité accrue face aux imprévus.</p>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- ***** About ***** -->
 
     <section class="about" id="about">
-      <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos id
-              nostrum illo harum blanditiis, tenetur eum suscipit cupiditate
-              in vel, ex quam quidem quos mollitia labore aut sunt eius
-              ratione molestiae fuga veniam facere similique voluptate.
-            </p>
-            <!-- Provide a link to your resume -->
-            <a href="#" class="btn">My Resume</a>
-          </div>
-
-          <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="" />
-          </div>
+        <div class="row">
+            <h2>À propos de moi</h2>
+            <div class="about__content">
+                <div class="about__text">
+                    <p>
+                        Bonjour ! Je m'appelle Tiago Narciso.
+                        Actuellement en troisième année de Bachelor Universitaire de Technologie (BUT) en informatique,
+                        je m'épanouis dans un apprentissage en alternance chez Hellosafe,
+                        où je développe mes compétences en tant que développeur full-stack.
+                        Ma passion pour la technologie ne se limite pas à mes études ; elle s'étend également à mes
+                        loisirs,
+                        où je me plonge dans l'univers compétitif des jeux en ligne.
+                    </p>
+                    <p>
+                        En dehors de l'écran, je trouve mon évasion en assistant à des spectacles de théâtre dramatique.
+                        Cette passion pour les arts de la scène offre un contraste captivant avec le monde numérique
+                        dans lequel je m'immerge quotidiennement.
+                        Mon parcours est une quête d'équilibre entre technologie,
+                        compétition et art dramatique,
+                        me forgeant une identité unique où l'innovation et la créativité se rencontrent.
+                    </p>
+                    <a href="documents/CV_NARCISO_TIAGO.pdf" target="_blank" class="btn">Mon CV</a>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
-  </main>
+</main>
 
-  <!-- ***** Contact ***** -->
+<!-- ***** Contact ***** -->
 
-  <section class="contact" id="contact">
+<section class="contact" id="contact">
     <div class="row">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
+        <h2>Me contacter</h2>
+        <div class="contact__info">
+            <p>
+                Je suis toujours ravi de nouer de nouvelles relations et d'explorer des opportunités de collaboration.
+                Que vous souhaitiez discuter d'un projet potentiel, partager des idées ou simplement dire bonjour,
+                n'hésitez pas à me contacter !
+            </p>
+            <div class="contact-links">
+                <a href="mailto:narcisolousa.t@gmail.com" class="btn">narcisolousa.t@gmail.com</a>
+                <a href="https://github.com/almerion">
+                    <img src="images/github.svg" alt="github logo" height="50" width="50">
+                </a>
+                <a href="http://www.linkedin.com/in/tiago-narciso-438a80231">
+                    <img src="images/linkedin.svg" alt="linkedin logo" height="50" width="50">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ***** Footer ***** -->
+
+<footer role="contentinfo" class="footer">
+    <div class="row">
+        <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
         <p>
-          Are you looking for a fast-performing and user-friendly website to
-          represent your product or business? or looking for any kind of
-          consultation? or want to ask questions? or have some advice for me
-          or just want to say "Hi 👋" in any case feel free to Let me know. I
-          will do my best to respond back. 😊 The quickest way to reach out to
-          me is via an email.
+            &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
         </p>
-        <!-- Replace the email with yours -->
-        <a href="mailto:you@example.com" class="btn">you@example.com</a>
-      </div>
     </div>
-  </section>
+</footer>
 
-  <!-- ***** Footer ***** -->
-
-  <footer role="contentinfo" class="footer">
-    <div class="row">
-      <!-- Update the links to point to your accounts -->
-      <ul class="footer__social-links">
-        <li class="footer__social-link-item">
-          <a href="https://twitter.com/nisarhassan12/" title="Link to Twitter Profile">
-            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://github.com/nisarhassan12/" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://codepen.io/nisar_hassan" title="Link to Codepen Profile">
-            <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href=https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-        </li>
-      </ul>
-
-      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
-      <p>
-        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
-      </p>
-      <div class="footer__github-buttons">
-        <iframe
-          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
-          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
-        </iframe>
-      </div>
-    </div>
-  </footer>
-
-  <a href="#top" class="back-to-top" title="Back to Top">
+<a href="#top" class="back-to-top" title="Back to Top">
     <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
-  </a>
-  <script src="./index.js"></script>
+</a>
+<script src="./index.js"></script>
 </body>
 
 </html>

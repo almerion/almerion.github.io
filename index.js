@@ -1,3 +1,18 @@
+let index = 0;
+const items = document.querySelectorAll('.carousel-element');
+const totalItems = items.length;
+
+document.querySelector('.carousel-btn.prev').addEventListener('click', () => {
+  index = (index + totalItems - 1) % totalItems;
+  document.querySelector('.carousel-container').style.transform = `translateX(-${index * 100}%)`;
+});
+
+document.querySelector('.carousel-btn.next').addEventListener('click', () => {
+  index = (index + 1) % totalItems;
+  document.querySelector('.carousel-container').style.transform = `translateX(-${index * 100}%)`;
+});
+
+
 /* -----------------------------------------
   Have focus outline only for keyboard users 
  ---------------------------------------- */
